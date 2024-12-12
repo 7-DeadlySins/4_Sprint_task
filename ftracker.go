@@ -103,7 +103,7 @@ const (
 // speed float64 — средняя скорость во время тренировки в км/ч.
 func WalkingSpentCalories(action int, duration, weight, height, speed float64) float64 {
 	// ваш код здесь
-	return ((walkingCaloriesWeightMultiplier*weight + (math.Pow(speed/3.6, 2)/height)*walkingSpeedHeightMultiplier*weight) * duraduration * minInH)
+	return ((walkingCaloriesWeightMultiplier*weight + (math.Pow(speed/3.6, 2)/height)*walkingSpeedHeightMultiplier*weight) * duration * minInH)
 }
 
 // Константы для расчета калорий, расходуемых при плавании.
